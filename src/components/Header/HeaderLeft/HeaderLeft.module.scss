@@ -1,0 +1,37 @@
+.left{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &:hover{       
+        & svg path:nth-child(1){
+            fill: var(--navColor);          
+        }
+        & svg path:nth-child(2){
+            fill: var(--accent);
+                  
+        }
+        span{
+            text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px rgb(112, 110, 110);
+        }
+    }
+    &__logo{
+        width:40px;
+        height:40px;
+        display:flex;        
+    }
+    &__name{
+        max-width:190px;
+        width: 100%;
+        span{
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 50px;
+            color:var(--accent);
+        }
+    }
+}
